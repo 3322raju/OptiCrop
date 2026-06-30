@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Crop Recommendation</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+
+<body>
+
+<nav>
+
+    <div class="logo">🌾 OptiCrop</div>
+
+    <ul>
+
+        <li><a href="/">Home</a></li>
+
+        <li><a href="/predict">Predict</a></li>
+
+        <li><a href="/dashboard">Dashboard</a></li>
+
+    </ul>
+
+</nav>
+
+<div class="result-box">
+
+<h1>🌾 Recommended Crop</h1>
+
+<h2>{{ prediction }}</h2>
+
+{% if info %}
+
+<table class="info-table">
+
+<tr>
+
+<td>Description</td>
+
+<td>{{ info.description }}</td>
+
+</tr>
+
+<tr>
+
+<td>Season</td>
+
+<td>{{ info.season }}</td>
+
+</tr>
+
+<tr>
+
+<td>Suitable Soil</td>
+
+<td>{{ info.soil }}</td>
+
+</tr>
+
+<tr>
+
+<td>Temperature</td>
+
+<td>{{ info.temperature }}</td>
+
+</tr>
+
+<tr>
+
+<td>Water Requirement</td>
+
+<td>{{ info.water }}</td>
+
+</tr>
+
+<tr>
+
+<td>Fertilizer</td>
+
+<td>{{ info.fertilizer }}</td>
+
+</tr>
+
+<tr>
+
+<td>Duration</td>
+
+<td>{{ info.duration }}</td>
+
+</tr>
+
+<tr>
+
+<td>Benefits</td>
+
+<td>{{ info.benefits }}</td>
+
+</tr>
+
+</table>
+
+{% endif %}
+
+<div class="buttons">
+
+<a href="/predict" class="btn">
+
+Predict Again
+
+</a>
+
+<a href="/" class="btn btn2">
+
+Home
+
+</a>
+
+</div>
+
+</div>
+
+</body>
+
+</html>

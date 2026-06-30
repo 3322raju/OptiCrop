@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Dashboard</title>
+
+<link rel="stylesheet"
+href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+
+<body>
+
+<nav>
+
+<div class="logo">🌾 OptiCrop</div>
+
+<ul>
+
+<li><a href="/">Home</a></li>
+
+<li><a href="/predict">Predict</a></li>
+
+<li><a href="/history">History</a></li>
+
+<li><a href="/about">About</a></li>
+
+</ul>
+
+</nav>
+
+<div class="dashboard">
+
+<h1>📊 OptiCrop Dashboard</h1>
+
+<div class="cards">
+
+<div class="card">
+<h2>2200</h2>
+<p>Dataset Records</p>
+</div>
+
+<div class="card">
+<h2>22</h2>
+<p>Supported Crops</p>
+</div>
+
+<div class="card">
+<h2>96%</h2>
+<p>Model Accuracy</p>
+</div>
+
+<div class="card">
+<h2>7</h2>
+<p>Input Features</p>
+</div>
+
+</div>
+
+<br><br>
+
+<h2>Project Information</h2>
+
+<table>
+
+<tr>
+<th>Technology</th>
+<th>Used</th>
+</tr>
+
+<tr>
+<td>Machine Learning</td>
+<td>Logistic Regression</td>
+</tr>
+
+<tr>
+<td>Backend</td>
+<td>Flask</td>
+</tr>
+
+<tr>
+<td>Database</td>
+<td>SQLite</td>
+</tr>
+
+<tr>
+<td>Language</td>
+<td>Python</td>
+</tr>
+
+<tr>
+<td>Frontend</td>
+<td>HTML, CSS</td>
+</tr>
+
+</table>
+
+</div>
+
+</body>
+</html>
