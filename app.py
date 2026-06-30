@@ -4,6 +4,9 @@ import numpy as np
 import sqlite3
 
 from crop_info import crop_data
+# This creates the database and history table if they don't exist
+import database.database
+
 
 app = Flask(__name__)
 
